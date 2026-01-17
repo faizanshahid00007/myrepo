@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class sumEle {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("No. of elements");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            System.out.println(i + "st element ");
+            arr[i] = sc.nextInt();
+        }
+        System.out.println("target is :");
+        int target = sc.nextInt();
+        int flag = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = i+1; j < n; j++) {
+                if (arr[i] + arr[j] == target) {
+                    flag = 1;
+                    break;
+                }
+            }}
+                if (flag == 1) System.out.println("true");
+                else System.out.println("false");
+    }}
